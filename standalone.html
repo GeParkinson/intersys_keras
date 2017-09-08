@@ -1,0 +1,31 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style/github-pandoc.css">
+</head>
+<body>
+<div class="content">
+    <h1 id="projekt-intersys-keras"><a href="#projekt-intersys-keras" name="projekt-intersys-keras">Projekt: intersys_keras</a></h1>
+    <p>Abschlussprojekt Interactive Systems SS2017</p>
+    <h2 id="image-classification"><a href="#image-classification" name="image-classification">Image Classification</a></h2>
+    <h5 id="die-idee"><a href="#die-idee" name="die-idee">Die Idee</a></h5>
+    <p>Image Classification mit Hilfe eines zuvor trainierten neuronalen Netzes zur Vereinfachung und Reduzierung von Benutzerinteraktionen bei der Eingabe von Daten in ein Webformular.
+        Als Besonderheit sollten ORB (<a href="http://docs.opencv.org/3.0-beta/doc/py_tutorials/py_feature2d/py_orb/py_orb.html">Oriented FAST and rotated BRIEF</a>)
+        Feature Vektoren als Eingabeparameter dienen, um folgende Vorteile zu erlangen:</p>
+    <ul>
+        <li>Unabhängigkeit von Bildauflösungen</li>
+        <li>ressourcenschondender als <a href="https://de.wikipedia.org/wiki/Convolutional_Neural_Network">CNNs</a></li>
+        <li>ggf. bessere Ergebnisse als <a href="https://de.wikipedia.org/wiki/Support_Vector_Machine">SVMs</a></li>
+    </ul>
+    <h5 id="umsetzung"><a href="#umsetzung" name="umsetzung">Umsetzung</a></h5>
+    <p>Die Umsetzung erfolgte in einem kleinen Python Skript unter Verwendung von <a href="https://keras.io/">Keras.io</a> und <a href="http://opencv.org/">OpenCV</a>.
+        Fürs Training wurde der <a href="http://www.vision.caltech.edu/Image_Datasets/Caltech256/">Caltech 257</a> Bilderdatensatz eingesetzt.</p>
+    <p>Source Code: <a href="https://github.com/GeParkinson/intersys_keras/blob/master/keras_caltech256.py">keras_caltech256.py</a></p>
+    <h3 id="ergebnisse---loss-accuracy"><a href="#ergebnisse---loss-accuracy" name="ergebnisse---loss-accuracy">Ergebnisse - Loss, Accuracy</a></h3>
+    <p><img src="img/loss_01.png" alt="Loss" />
+        <img src="img/acc_01.png" alt="Accurancy" /></p>
+    <p>Die Kurven der beiden Metriken Loss und Accuracy zeigen einen typischen Verlauf beim maschinellen Lernen. Aufgrund dessen kann man schlussfolgern, dass die technische Umsetzung soweit korrekt erfolgt ist.
+        Die bei den Tests erreichte Genauigkeit (korrekte Zuordnung der Testbilder) von ca. 5% blieb allerdings weit hinter den Erwartungen zurück. Einen praktischen Nutzen erreicht die Software damit nicht.</p>
+</div>
+</body>
+</html>
