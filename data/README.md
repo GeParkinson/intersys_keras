@@ -1,0 +1,1 @@
+Directory for persisting already calculated feature vectors.
