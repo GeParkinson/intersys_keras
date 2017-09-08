@@ -14,6 +14,8 @@ Feature Vektoren als Eingabeparameter dienen, um folgende Vorteile zu erlangen:
 Die Umsetzung erfolgte in einem kleinen Python Skript unter Verwendung von [Keras.io](https://keras.io/) und [OpenCV](http://opencv.org/).
 Fürs Training wurde der [Caltech 257](http://www.vision.caltech.edu/Image_Datasets/Caltech256/) Bilderdatensatz eingesetzt.
 
+Source Code: [keras_caltech256.py](https://github.com/GeParkinson/intersys_keras/blob/master/keras_caltech256.py)
+
 ### Ergebnisse - Loss, Accuracy
 ![Loss](img/loss_01.png)
 ![Accurancy](img/acc_01.png)
